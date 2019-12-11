@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V14</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icons/favicon.ico') }}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/iconic/css/material-design-iconic-font.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/animate/animate.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/css-hamburgers/hamburgers.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/animsition/css/animsition.min.css') }}"">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/select2/select2.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/daterangepicker/daterangepicker.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/util.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+<!--===============================================================================================-->
+</head>
+<body >
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" action="/formfun" method="post">
+				<span class="contact100-form-title">
+					Railway Announcement System
+				</span>
+				<div class='row'>
+				<label class="label-input100" for="first-name">Station Information *</label>
+				<!-- <div class="row"> -->
+				<div class="wrap-input100 rs1 col-md-3">
+					<input id="first-name" class="input100" type="text" name="fcity" placeholder="From">
+					<span class="focus-input100"></span>
+				</div>
+				<!-- <label class="label-input100" for="first-name">From City *</label> -->
+				<div class="wrap-input100 rs1 col-md-3">
+					<input class="input100" type="text" name="to" placeholder="To">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 rs1 col-md-3">
+					<input class="input100" type="text" name="via" placeholder="Via">
+					<span class="focus-input100"></span>
+				</div>
+			</div>
+				
+				<div class="row">
+				<label class="label-input100" for="email">Train Information *</label>
+				<div class="wrap-input100 rs1 col-md-3 ">
+					<input class="input100" type="text" name="train_no" placeholder="Train No.">
+					<span class="focus-input100"></span>
+
+				</div>
+
+				<div class="wrap-input100 rs1 col-md-3">
+					<input class="input100" type="text" name="train_name" placeholder="Train Name">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 rs1 col-md-3">
+					<input class="input100" type="text" name="platform" placeholder="Platform No.">
+					<span class="focus-input100"></span>
+				</div>
+			</div>
+
+				<!-- <div class="row">
+				<label class="label-input100" for="phone">Phone Number</label>
+				<div class="wrap-input100">
+					<input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000">
+					<span class="focus-input100"></span>
+				</div>
+			</div>
+				 -->
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							Submit
+							<i class="zmdi zmdi-arrow-right m-l-8"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='vendor/jquery/jquery-3.2.1.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='vendor/animsition/js/animsition.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='vendor/bootstrap/js/popper.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='vendor/select2/select2.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='vendor/daterangepicker/moment.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/daterangepicker/daterangepicker.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='vendor/countdowntime/countdowntime.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
